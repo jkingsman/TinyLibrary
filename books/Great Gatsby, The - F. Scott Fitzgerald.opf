@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">7</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">15feb0dc-ff2d-4acf-9adb-fb6d29a29c28</dc:identifier>
+        <dc:title>The Great Gatsby</dc:title>
+        <dc:creator opf:file-as="Fitzgerald, F. Scott" opf:role="aut">F. Scott Fitzgerald</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2021-01-01T22:22:26+00:00</dc:date>
+        <dc:description>The decadent and mysterious Jay Gatsby pursues the American Dream in Jazz Age New York.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Traffic accidents--Fiction</dc:subject>
+        <dc:subject>First loves--Fiction</dc:subject>
+        <dc:subject>Rich people--Fiction</dc:subject>
+        <dc:subject>Mistresses--Fiction</dc:subject>
+        <dc:subject>Revenge--Fiction</dc:subject>
+        <dc:subject>Long Island (N.Y.)--Fiction</dc:subject>
+        <dc:subject>Psychological fiction</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T04:59:17.711168+00:00"/>
+        <meta name="calibre:title_sort" content="Great Gatsby, The"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Great Gatsby, The - F. Scott Fitzgerald.jpg"/>
+    </guide>
+</package>

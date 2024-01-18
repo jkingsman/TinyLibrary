@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">11</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">a0810143-9215-4218-bb66-45af2b708fbd</dc:identifier>
+        <dc:title>Alice’s Adventures in Wonderland</dc:title>
+        <dc:creator opf:file-as="Carroll, Lewis" opf:role="aut">Lewis Carroll</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2014-05-25T00:00:00+00:00</dc:date>
+        <dc:description>A young girl follows a white rabbit into a strange land of poetry, humor, and whimsy.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/lewis-carroll/alices-adventures-in-wonderland/john-tenniel</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Fantasy</dc:subject>
+        <dc:subject>Children's stories</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T04:59:18.333552+00:00"/>
+        <meta name="calibre:title_sort" content="Alice’s Adventures in Wonderland"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Alice’s Adventures in Wonderland - Lewis Carroll.jpg"/>
+    </guide>
+</package>

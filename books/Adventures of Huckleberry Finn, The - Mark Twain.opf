@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">2</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">3378deb5-fc64-400a-a3b5-83755a12349f</dc:identifier>
+        <dc:title>The Adventures of Huckleberry Finn</dc:title>
+        <dc:creator opf:file-as="Twain, Mark" opf:role="aut">Mark Twain</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2015-05-12T00:01:00+00:00</dc:date>
+        <dc:description>The adventures of a young boy and his friend, an escaped slave, on the Mississippi river in the Antebellum South.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/mark-twain/the-adventures-of-huckleberry-finn</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Voyages and travels--Fiction</dc:subject>
+        <dc:subject>Slavery--Fiction</dc:subject>
+        <dc:subject>Mississippi River--Fiction</dc:subject>
+        <dc:subject>Missouri--Fiction</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T04:59:16.744957+00:00"/>
+        <meta name="calibre:title_sort" content="Adventures of Huckleberry Finn, The"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Adventures of Huckleberry Finn, The - Mark Twain.jpg"/>
+    </guide>
+</package>

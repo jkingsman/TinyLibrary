@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">9</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">0aadbc7e-b392-48ee-bcd6-0d7168251c14</dc:identifier>
+        <dc:title>Frankenstein: Or, the Modern Prometheus</dc:title>
+        <dc:creator opf:file-as="Shelley, Mary" opf:role="aut">Mary Shelley</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2015-05-12T00:01:00+00:00</dc:date>
+        <dc:description>A tragic scientist creates a monster in his laboratory.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/mary-shelley/frankenstein</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Science fiction</dc:subject>
+        <dc:subject>Horror tales</dc:subject>
+        <dc:subject>Gothic fiction (Literary genre)</dc:subject>
+        <dc:subject>Scientists -- Fiction</dc:subject>
+        <dc:subject>Monsters -- Fiction</dc:subject>
+        <dc:subject>Frankenstein</dc:subject>
+        <dc:subject>Victor (Fictitious character) -- Fiction</dc:subject>
+        <dc:subject>Frankenstein's monster (Fictitious character) -- Fiction</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T04:59:18.037002+00:00"/>
+        <meta name="calibre:title_sort" content="Frankenstein"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Frankenstein - Mary Shelley.jpg"/>
+    </guide>
+</package>

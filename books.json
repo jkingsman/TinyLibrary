@@ -1,0 +1,110 @@
+{
+    "Alice\u2019s Adventures in Wonderland": {
+        "author": "Lewis Carroll",
+        "cover": "books/Alice\u2019s Adventures in Wonderland - Lewis Carroll.jpg",
+        "description": "A young girl follows a white rabbit into a strange land of poetry, humor, and whimsy.",
+        "file": "books/Alice\u2019s Adventures in Wonderland - Lewis Carroll.epub",
+        "opf": "books/Alice\u2019s Adventures in Wonderland - Lewis Carroll.opf",
+        "tags": "Fantasy, Children's stories",
+        "title": "Alice\u2019s Adventures in Wonderland"
+    },
+    "Frankenstein: Or, the Modern Prometheus": {
+        "author": "Mary Shelley",
+        "cover": "books/Frankenstein - Mary Shelley.jpg",
+        "description": "A tragic scientist creates a monster in his laboratory.",
+        "file": "books/Frankenstein - Mary Shelley.epub",
+        "opf": "books/Frankenstein - Mary Shelley.opf",
+        "tags": "Science fiction, Horror tales, Gothic fiction (Literary genre), Scientists -- Fiction, Monsters -- Fiction, Frankenstein, Victor (Fictitious character) -- Fiction, Frankenstein's monster (Fictitious character) -- Fiction",
+        "title": "Frankenstein: Or, the Modern Prometheus"
+    },
+    "Heart of Darkness": {
+        "author": "Joseph Conrad",
+        "cover": "books/Heart of Darkness - Joseph Conrad.jpg",
+        "description": "A steamer captain in the heart of Africa witnesses the final days of a brutal ivory trader.",
+        "file": "books/Heart of Darkness - Joseph Conrad.epub",
+        "opf": "books/Heart of Darkness - Joseph Conrad.opf",
+        "tags": "Europeans--Africa--Fiction, Trading posts--Fiction, Degeneration--Fiction, Imperialism--Fiction, Africa--Fiction",
+        "title": "Heart of Darkness"
+    },
+    "Moby Dick: Or, The Whale": {
+        "author": "Herman Melville",
+        "cover": "books/Moby Dick - Herman Melville.jpg",
+        "description": "Captain Ahab, having lost his leg to the white whale Moby Dick, travels the world on a quest for vengeance.",
+        "file": "books/Moby Dick - Herman Melville.epub",
+        "opf": "books/Moby Dick - Herman Melville.opf",
+        "tags": "Whaling -- Fiction, Sea stories, Psychological fiction, Ship captains -- Fiction, Adventure stories, Mentally ill -- Fiction, Ahab, Captain (Fictitious character) -- Fiction, Whales -- Fiction, Whaling ships -- Fiction",
+        "title": "Moby Dick: Or, The Whale"
+    },
+    "Pride and Prejudice": {
+        "author": "Jane Austen",
+        "cover": "books/Pride and Prejudice - Jane Austen.jpg",
+        "description": "A Regency-era novel of manners in which five women try to adjust to their new neighbor, an eligible gentleman.",
+        "file": "books/Pride and Prejudice - Jane Austen.epub",
+        "opf": "books/Pride and Prejudice - Jane Austen.opf",
+        "tags": "England -- Fiction, Young women -- Fiction, Love stories, Sisters -- Fiction, Domestic fiction, Courtship -- Fiction, Social classes -- Fiction",
+        "title": "Pride and Prejudice"
+    },
+    "The Adventures of Huckleberry Finn": {
+        "author": "Mark Twain",
+        "cover": "books/Adventures of Huckleberry Finn, The - Mark Twain.jpg",
+        "description": "The adventures of a young boy and his friend, an escaped slave, on the Mississippi river in the Antebellum South.",
+        "file": "books/Adventures of Huckleberry Finn, The - Mark Twain.epub",
+        "opf": "books/Adventures of Huckleberry Finn, The - Mark Twain.opf",
+        "tags": "Voyages and travels--Fiction, Slavery--Fiction, Mississippi River--Fiction, Missouri--Fiction",
+        "title": "The Adventures of Huckleberry Finn"
+    },
+    "The Count of Monte Cristo": {
+        "author": "Alexandre Dumas",
+        "cover": "books/Count of Monte Cristo, The - Alexandre Dumas.jpg",
+        "description": "A man seeks revenge for having been falsely imprisoned years earlier.",
+        "file": "books/Count of Monte Cristo, The - Alexandre Dumas.epub",
+        "opf": "books/Count of Monte Cristo, The - Alexandre Dumas.opf",
+        "tags": "Historical fiction, Revenge -- Fiction, Adventure stories, Prisoners -- Fiction, France -- History -- 19th century -- Fiction, Pirates -- Fiction, Dant\u00e8s, Edmond (Fictitious character) -- Fiction",
+        "title": "The Count of Monte Cristo"
+    },
+    "The Great Gatsby": {
+        "author": "F. Scott Fitzgerald",
+        "cover": "books/Great Gatsby, The - F. Scott Fitzgerald.jpg",
+        "description": "The decadent and mysterious Jay Gatsby pursues the American Dream in Jazz Age New York.",
+        "file": "books/Great Gatsby, The - F. Scott Fitzgerald.epub",
+        "opf": "books/Great Gatsby, The - F. Scott Fitzgerald.opf",
+        "tags": "Traffic accidents--Fiction, First loves--Fiction, Rich people--Fiction, Mistresses--Fiction, Revenge--Fiction, Long Island (N.Y.)--Fiction, Psychological fiction",
+        "title": "The Great Gatsby"
+    },
+    "The Odyssey": {
+        "author": "Homer",
+        "cover": "books/Odyssey, The - Homer.jpg",
+        "description": "An epic poem following a Greek hero trying to return home after the Trojan war.",
+        "file": "books/Odyssey, The - Homer.epub",
+        "opf": "books/Odyssey, The - Homer.opf",
+        "tags": "Homer -- Translations into English, Epic poetry, Greek -- Translations into English, Odysseus, King of Ithaca (Mythological character)",
+        "title": "The Odyssey"
+    },
+    "The Pilgrim\u2019s Progress": {
+        "author": "John Bunyan",
+        "cover": "books/Pilgrim\u2019s Progress, The - John Bunyan.jpg",
+        "description": "An allegorical story of a pilgrim in search of redemption, followed later by his wife and children, passing through great trials before reaching the Celestial City.",
+        "file": "books/Pilgrim\u2019s Progress, The - John Bunyan.epub",
+        "opf": "books/Pilgrim\u2019s Progress, The - John Bunyan.opf",
+        "tags": "Bunyan, John, 1628-1688, Authors, English -- Early modern, 1500-1700 -- Biography, Christian literature, English -- History and criticism, Puritans -- England -- Biography, English",
+        "title": "The Pilgrim\u2019s Progress"
+    },
+    "The Strange Case of Dr. Jekyll and Mr. Hyde": {
+        "author": "Robert Louis Stevenson",
+        "cover": "books/Strange Case of Dr. Jekyll and Mr. Hyde, The - Robert Louis Stevenson.jpg",
+        "description": "A London lawyer investigates the relationship between a brilliant scientist and a misshapen misanthrope.",
+        "file": "books/Strange Case of Dr. Jekyll and Mr. Hyde, The - Robert Louis Stevenson.epub",
+        "opf": "books/Strange Case of Dr. Jekyll and Mr. Hyde, The - Robert Louis Stevenson.opf",
+        "tags": "Horror tales, London (England) -- Fiction, Multiple personality -- Fiction, Physicians -- Fiction, Psychological fiction, Science fiction, Self-experimentation in medicine -- Fiction",
+        "title": "The Strange Case of Dr. Jekyll and Mr. Hyde"
+    },
+    "Wuthering Heights": {
+        "author": "Emily Bront\u00eb",
+        "cover": "books/Wuthering Heights - Emily Bront\u00eb.jpg",
+        "description": "An adopted child ends up tearing apart families in a quest for power and revenge.",
+        "file": "books/Wuthering Heights - Emily Bront\u00eb.epub",
+        "opf": "books/Wuthering Heights - Emily Bront\u00eb.opf",
+        "tags": "Revenge -- Fiction, Psychological fiction, Rejection (Psychology) -- Fiction, Love stories, Domestic fiction, Yorkshire (England) -- Fiction, Foundlings -- Fiction, Rural families -- Fiction, Heathcliff (Fictitious character : Bront\u00eb) -- Fiction, Triangles (Interpersonal relations) -- Fiction",
+        "title": "Wuthering Heights"
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">3</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">a67787c4-9acd-4de1-bb9e-8c3805c21b61</dc:identifier>
+        <dc:title>Wuthering Heights</dc:title>
+        <dc:creator opf:file-as="Brontë, Emily" opf:role="aut">Emily Brontë</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2018-07-18T22:49:37+00:00</dc:date>
+        <dc:description>An adopted child ends up tearing apart families in a quest for power and revenge.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/emily-bronte/wuthering-heights</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Revenge -- Fiction</dc:subject>
+        <dc:subject>Psychological fiction</dc:subject>
+        <dc:subject>Rejection (Psychology) -- Fiction</dc:subject>
+        <dc:subject>Love stories</dc:subject>
+        <dc:subject>Domestic fiction</dc:subject>
+        <dc:subject>Yorkshire (England) -- Fiction</dc:subject>
+        <dc:subject>Foundlings -- Fiction</dc:subject>
+        <dc:subject>Rural families -- Fiction</dc:subject>
+        <dc:subject>Heathcliff (Fictitious character : Brontë) -- Fiction</dc:subject>
+        <dc:subject>Triangles (Interpersonal relations) -- Fiction</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T04:59:16.982960+00:00"/>
+        <meta name="calibre:title_sort" content="Wuthering Heights"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Wuthering Heights - Emily Brontë.jpg"/>
+    </guide>
+</package>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Library</title>
+    <link rel="stylesheet" href="./lib/style.css" type="text/css" />
+    <style type="text/css">
+      body {
+        font-family: sans-serif;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      #bookSearch {
+        width: 100%;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        border: solid 1px #ccc;
+        border-radius: 10px;
+        position: sticky;
+        top: 10px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-auto-rows: auto;
+        grid-gap: 0.5rem;
+      }
+
+      .card {
+        border: 2px solid #e7e7e7;
+        border-radius: 15px;
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+
+      .title {
+        margin: 0;
+        color: rgb(0 0 145);
+      }
+
+      .author {
+        font-style: italic;
+        color: #737070;
+        margin-top: 0.1rem;
+      }
+
+      .tags {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: smaller;
+        margin-bottom: 0px;
+        margin-top: 5px;
+      }
+
+      #noResultsContainer {
+        text-align: center;
+        font-style: italic;
+        color: #737070;
+        margin-top: 25px;
+      }
+
+      #modalCover {
+        width: 40%;
+        float: left;
+        margin: 0 10px 10px 0px;
+      }
+
+      #modalDescription {
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        padding-top: 10px;
+      }
+
+      .modal__btn-default {
+        background-color: #97a7bb;
+        color: #fff;
+      }
+
+      .modal__btn-padding {
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <base href="/" />
+  </head>
+
+  <body>
+    <input id="bookSearch" placeholder="search for books..." />
+    <hr />
+    <div id="cardContainer" class="cards"></div>
+    <div id="noResultsContainer"><p>No further results found!</p></div>
+    <div class="modal" id="detailsModal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <main class="modal__content" id="modal-1-content">
+            <h3 id="modalTitle" class="title">Title</h3>
+            <p id="modalAuthor" class="author">Author</p>
+
+            <p id="modalDescription"></p>
+            <br>
+            <button
+              id="modalRead"
+              class="modal__btn modal__btn-primary modal__btn-padding"
+            >
+              Tap to read in browser</button
+            ><br />
+            <button
+              id="modalDownload"
+              class="modal__btn modal__btn-default modal__btn-padding"
+            ></button>
+          </main>
+          <footer class="modal__footer">
+            <button
+              class="modal__btn"
+              data-micromodal-close
+              aria-label="Close this dialog window"
+            >
+              Close
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./lib/micromodal.min.js"></script>
+    <script type="text/javascript">
+      MicroModal.init();
+      let metadata;
+
+      const debounce = (callback, wait) => {
+        let timeoutId = null;
+        return (...args) => {
+          window.clearTimeout(timeoutId);
+          timeoutId = window.setTimeout(() => {
+            callback(...args);
+          }, wait);
+        };
+      };
+
+      function download(path, bookName) {
+        fetch(path)
+          // check to make sure you didn't have an unexpected failure (may need to check other things here depending on use case / backend)
+          .then((resp) =>
+            resp.status === 200
+              ? resp.blob()
+              : alert("Something went wrong. Please try again.")
+          )
+          .then((blob) => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.style.display = "none";
+            a.href = url;
+            // the filename you want
+            a.download = bookName;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+          })
+          .catch(() => alert("Something went wrong. Please try again."));
+      }
+
+      async function loadMetadata() {
+        metadata = await (await fetch("books.json")).json();
+        return metadata;
+      }
+
+      function renderBooks(searchTerm) {
+        document.querySelector("#cardContainer").innerHTML = "";
+        // metadata will be loaded into the global var to be accessed as needed
+        for (book in metadata) {
+          // skip books that don't match our search
+          const searchTerm = document.querySelector("#bookSearch").value;
+          if (
+            searchTerm &&
+            !JSON.stringify(metadata[book])
+              .toLowerCase()
+              .includes(searchTerm.toLowerCase())
+          ) {
+            continue;
+          }
+
+          const article = document.createElement("article");
+          article.className = "card";
+          article.onclick = showModal.bind(this, book);
+
+          const title = document.createElement("h3");
+          title.className = "title";
+          title.innerHTML = metadata[book].title;
+
+          const author = document.createElement("p");
+          author.className = "author";
+          author.innerHTML = metadata[book].author;
+
+          const tags = document.createElement("p");
+          tags.className = "tags";
+          tags.innerHTML = metadata[book].tags;
+
+          article.appendChild(title);
+          article.appendChild(author);
+          article.appendChild(tags);
+
+          document.querySelector("#cardContainer").appendChild(article);
+        }
+      }
+
+      function readEpub(path) {
+        const pathObject = {
+          url: path
+        };
+        const redirectURL = '/reader.html?' + new URLSearchParams(pathObject);
+        window.location = redirectURL;
+      }
+
+      function showModal(book) {
+        document.querySelector("#modalTitle").innerHTML = metadata[book].title;
+        document.querySelector("#modalAuthor").innerHTML =
+          metadata[book].author;
+
+        document.querySelector("#modalDescription").innerHTML =
+          '<img id="modalCover" />' + metadata[book].description;
+        document.querySelector("#modalCover").src = metadata[book].cover;
+
+        const extension = metadata[book].file.split(".").pop();
+        document.querySelector(
+          "#modalDownload"
+        ).innerHTML = `Download ${extension} file`;
+        document.querySelector("#modalDownload").onclick = download.bind(
+          this,
+          metadata[book].file,
+          metadata[book].title + "." + extension
+        );
+
+        if (extension == "epub") {
+          document.querySelector("#modalRead").style.display = "inline-block";
+          document.querySelector("#modalRead").onclick = readEpub.bind(
+            this,
+            metadata[book].file
+          );
+        } else {
+          document.querySelector("#modalRead").style.display = "none";
+        }
+
+        MicroModal.show("detailsModal");
+      }
+
+      const debouncedSearch = debounce(renderBooks, 250);
+      document
+        .querySelector("#bookSearch")
+        .addEventListener("keyup", debouncedSearch);
+
+      loadMetadata().then(renderBooks);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">12</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">258ba99f-6590-49d4-8afb-9c5e2221be44</dc:identifier>
+        <dc:title>Heart of Darkness</dc:title>
+        <dc:creator opf:file-as="Conrad, Joseph" opf:role="aut">Joseph Conrad</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2014-05-25T00:00:00+00:00</dc:date>
+        <dc:description>A steamer captain in the heart of Africa witnesses the final days of a brutal ivory trader.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/joseph-conrad/heart-of-darkness</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Europeans--Africa--Fiction</dc:subject>
+        <dc:subject>Trading posts--Fiction</dc:subject>
+        <dc:subject>Degeneration--Fiction</dc:subject>
+        <dc:subject>Imperialism--Fiction</dc:subject>
+        <dc:subject>Africa--Fiction</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T05:09:58.252889+00:00"/>
+        <meta name="calibre:title_sort" content="Heart of Darkness"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Heart of Darkness - Joseph Conrad.jpg"/>
+    </guide>
+</package>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">1</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">e4d096d5-aa7d-42ac-8d85-b2e0bb31052b</dc:identifier>
+        <dc:title>Pride and Prejudice</dc:title>
+        <dc:creator opf:file-as="Austen, Jane" opf:role="aut">Jane Austen</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2014-05-25T00:00:00+00:00</dc:date>
+        <dc:description>A Regency-era novel of manners in which five women try to adjust to their new neighbor, an eligible gentleman.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/jane-austen/pride-and-prejudice</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>England -- Fiction</dc:subject>
+        <dc:subject>Young women -- Fiction</dc:subject>
+        <dc:subject>Love stories</dc:subject>
+        <dc:subject>Sisters -- Fiction</dc:subject>
+        <dc:subject>Domestic fiction</dc:subject>
+        <dc:subject>Courtship -- Fiction</dc:subject>
+        <dc:subject>Social classes -- Fiction</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T04:59:16.531956+00:00"/>
+        <meta name="calibre:title_sort" content="Pride and Prejudice"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Pride and Prejudice - Jane Austen.jpg"/>
+    </guide>
+</package>

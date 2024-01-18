@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">5</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">ba3844a8-7450-4f73-967f-ef8ac3ace3cb</dc:identifier>
+        <dc:title>The Strange Case of Dr. Jekyll and Mr. Hyde</dc:title>
+        <dc:creator opf:file-as="Stevenson, Robert Louis" opf:role="aut">Robert Louis Stevenson</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.0.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2015-05-12T00:01:00+00:00</dc:date>
+        <dc:description>A London lawyer investigates the relationship between a brilliant scientist and a misshapen misanthrope.</dc:description>
+        <dc:publisher>Standard Ebooks</dc:publisher>
+        <dc:identifier opf:scheme="URL">https://standardebooks.org/ebooks/robert-louis-stevenson/the-strange-case-of-dr-jekyll-and-mr-hyde</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Horror tales</dc:subject>
+        <dc:subject>London (England) -- Fiction</dc:subject>
+        <dc:subject>Multiple personality -- Fiction</dc:subject>
+        <dc:subject>Physicians -- Fiction</dc:subject>
+        <dc:subject>Psychological fiction</dc:subject>
+        <dc:subject>Science fiction</dc:subject>
+        <dc:subject>Self-experimentation in medicine -- Fiction</dc:subject>
+        <meta name="calibre:timestamp" content="2024-01-18T04:59:17.327206+00:00"/>
+        <meta name="calibre:title_sort" content="Strange Case of Dr. Jekyll and Mr. Hyde, The"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Strange Case of Dr. Jekyll and Mr. Hyde, The - Robert Louis Stevenson.jpg"/>
+    </guide>
+</package>
