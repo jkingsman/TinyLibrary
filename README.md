@@ -10,6 +10,10 @@ The code in `ebook_lib_esp32_code` is intended for upload to the ESP32 and essen
 
 It's an `ino` file intended for use with the Arduino IDE but should work on just about any ESP32.
 
+## Run on Ubuntu 24 (e.g. Raspberry Pi Zero 2W)
+
+See `Ubuntu 24 Static File Captive Portal.md` in this repo.
+
 ## Website
 
 The website is served from `index.html`, linking to `reader.html` for the ePub reader.
