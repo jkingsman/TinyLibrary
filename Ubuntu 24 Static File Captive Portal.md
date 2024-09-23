@@ -44,15 +44,27 @@ sudo bash -c "cat > /etc/caddy/Caddyfile"<< EOF
         output file /var/log/caddy/my-static-site.log
     }
 
-	redir /connecttest.txt /index.html
-	redir /wpad.dat /index.html
-	redir /generate_204 /index.html
-	redir /redirect /index.html
-	redir /hotspot-detect.html /index.html
-	redir /canonical.html /index.html
-	redir /success.txt /index.html
-	redir /success.html /index.html
-	redir /ncsi.txt /index.html
+    # imitate a captive portal API to bounce them to the main page
+    handle_path /captive {
+        header Content-Type 	application/json
+        respond \`{"user-portal-url": "http://10.0.1.1/index.html", "venue-info-url": "http://10.0.1.1/index.html"}\`
+    }
+
+    # all roads lead to the index
+    handle_errors {
+        rewrite * /index.html
+        file_server
+    }
+
+    redir /connecttest.txt /index.html
+    redir /wpad.dat /index.html
+    redir /generate_204 /index.html
+    redir /redirect /index.html
+    redir /hotspot-detect.html /index.html
+    redir /canonical.html /index.html
+    redir /success.txt /index.html
+    redir /success.html /index.html
+    redir /ncsi.txt /index.html
 }
 EOF
 
@@ -101,7 +113,7 @@ address=/#/10.0.1.1
 
 # dhcp config
 dhcp-range=10.0.1.2,10.0.1.50,255.255.255.0,28h
-dhcp-option-force=114,"http://10.0.1.1"
+dhcp-option-force=114,"http://10.0.1.1/captive"
 dhcp-option=option:router,10.0.1.1
 dhcp-option=option:dns-server,10.0.1.1
 dhcp-option=option:netmask,255.255.255.0
