@@ -10,6 +10,13 @@ sudo apt upgrade -y
 sudo apt install -y vim dnsmasq hostapd
 ````
 
+And optionally turn off unnecessary snapd.
+
+```bash
+sudo systemctl stop snapd
+sudo systemctl mask snapd
+```
+
 ## Caddy
 
 Then let's install Caddy and get it serving files. If you'd like to use an alternative webserver, feel free!
