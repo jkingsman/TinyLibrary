@@ -58,7 +58,7 @@
         margin-top: 5px;
       }
 
-      #noResultsContainer {
+      #resultsCountContainer {
         text-align: center;
         font-style: italic;
         color: #737070;
@@ -97,7 +97,7 @@
     <input id="bookSearch" placeholder="search for books..." />
     <hr />
     <div id="cardContainer" class="cards"></div>
-    <div id="noResultsContainer"><p>No further results found!</p></div>
+    <div id="resultsCountContainer"><span id="bookCount">0</span> <span id="bookCountLabel">books loaded</span></div>
     <div class="modal" id="detailsModal" aria-hidden="true">
       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
         <div
@@ -177,12 +177,13 @@
         return metadata;
       }
 
-      function renderBooks(searchTerm) {
+      function renderBooks() {
         document.querySelector("#cardContainer").innerHTML = "";
         // metadata will be loaded into the global var to be accessed as needed
+        let renderedCount = 0;
+        const searchTerm = document.querySelector("#bookSearch").value;
         for (book in metadata) {
           // skip books that don't match our search
-          const searchTerm = document.querySelector("#bookSearch").value;
           if (
             searchTerm &&
             !JSON.stringify(metadata[book])
@@ -213,7 +214,23 @@
           article.appendChild(tags);
 
           document.querySelector("#cardContainer").appendChild(article);
+          renderedCount++;
         }
+
+        // decorate our status
+        document.querySelector("#bookCount").innerHTML = renderedCount;
+        let bookWord = "books";
+        let verb = "loaded";
+
+        if (renderedCount === 1) {
+           bookWord = "book";
+        }
+
+        if (searchTerm.length > 0) {
+          verb = "found";
+        }
+
+        document.querySelector("#bookCountLabel").innerHTML = `${bookWord} ${verb}`;
       }
 
       function readEpub(path) {
